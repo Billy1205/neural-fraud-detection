@@ -19,6 +19,36 @@ Unlike traditional machine learning models, this project leverages the power of 
 - **Evaluation Tools**: Scikit-Learn (for `precision_recall_curve` and `auc`).
 - **Visualization**: Matplotlib & Seaborn.
 
+## ⚙️ Installation & Usage
+
+### 1. Prerequisites (Kaggle API)
+
+This project requires access to the Kaggle dataset via API.
+
+  - Download your `kaggle.json` from your Kaggle account.
+  - **Google Colab**: Add your credentials to the **Secrets** tab as `KAGGLE_USERNAME` and `KAGGLE_KEY`.
+  - **Local**: Store `kaggle.json` in your `~/.kaggle/` directory.
+
+### 2. Environment Setup
+
+```bash
+# Clone this repository
+git clone https://github.com/Billy1205/neural-fraud-detection.git
+cd neural-fraud-detection
+
+# Install deep learning dependencies
+pip install -r requirements.txt
+```
+
+### 3. Execution
+
+Open `notebooks/neural-fraud-detection.ipynb` and run the cells. The notebook will automatically:
+
+  - Download the dataset from Kaggle.
+  - Preprocess the data using **RobustScaler**.
+  - Train the **Artificial Neural Network (ANN)**.
+  - Perform **Threshold Optimization** based on the F1-Score.
+
 ***
 
 # 🧠 Neural Network Transaction Fraud Detection
@@ -48,7 +78,32 @@ Berbeda dengan model machine learning tradisional, proyek ini memanfaatkan daya 
 - **Optimal Threshold Search**: Algoritma pencarian otomatis untuk menemukan F1-Score tertinggi guna meminimalkan *False Positives*.
 - **Performance Evaluation**: Analisis kurva PR (Precision-Recall) sebagai indikator utama keberhasilan model dalam skenario keamanan dunia nyata.
 
-## ⚙️ Installation & Usage
-- **Configuration**: Gunakan token API Kaggle untuk akses dataset.
-- **Requirements**: `pip install tensorflow pandas numpy scikit-learn matplotlib`.
-- **Execution**: Jalankan notebook dari tahap *Data Loading* hingga *Trade-off Analysis*.
+## ⚙️ Instalasi & Penggunaan
+
+### 1. Prasyarat (Kaggle API)
+
+Proyek ini membutuhkan akses ke dataset Kaggle melalui API.
+
+  - Unduh `kaggle.json` dari akun Kaggle Anda.
+  - **Google Colab**: Tambahkan kredensial ke tab **Secrets** dengan nama `KAGGLE_USERNAME` dan `KAGGLE_KEY`.
+  - **Lokal**: Simpan file `kaggle.json` di folder `~/.kaggle/`.
+
+### 2. Persiapan Lingkungan
+
+```bash
+# Klon repositori
+git clone https://github.com/Billy1205/neural-fraud-detection.git
+cd neural-fraud-detection
+
+# Instal dependensi deep learning
+pip install -r requirements.txt
+```
+
+### 3. Cara Menjalankan
+
+Buka file `notebooks/neural-fraud-detection.ipynb` dan jalankan semua sel kode. Notebook akan secara otomatis:
+
+  - Mengunduh dataset dari Kaggle.
+  - Melakukan preprocessing data dengan **RobustScaler**.
+  - Melatih **Artificial Neural Network (ANN)**.
+  - Mencari **Threshold Optimal** berdasarkan F1-Score tertinggi.
